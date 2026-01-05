@@ -61,7 +61,9 @@ BridgeLabz-Training/
 │   │
 │   ├── scenario-based/
 │   │
-│   └── leet-code-codebase/       
+│   └── leet-code-codebase/
+│
+├── reviews/               (Branch & Folder Name)
 ```
 
 ---
@@ -170,4 +172,11 @@ ______________________________________
 - Started a Collections practice framework in a new Branch.  
 - Studied the concept od java Generics and their importance.  
 - Learned about the implementation and usage of generics concept.  
-- Solved and submit the all assigned problems related to Generics concept.  
+- Solved and submit the all assigned problems related to Generics concept.
+
+______________________________________
+
+**Day 16: January 05, 2026**
+- Started with a new branch named (reviews) and solved the all assigned problems in review.  
+- Studied the concept and usage of collections Framework fundamentals and their importance.  
+- Solved and submit the all assigned problems related to collections framework.  
