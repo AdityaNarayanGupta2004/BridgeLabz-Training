@@ -58,6 +58,8 @@ BridgeLabz-Training/
 │   │
 │   ├── gcr-codebase/
 │   │   ├── generics/
+│   │   ├── collections/
+│   │   └── java-streams/
 │   │
 │   ├── scenario-based/
 │   │
@@ -179,4 +181,14 @@ ______________________________________
 **Day 16: January 05, 2026**
 - Started with a new branch named (reviews) and solved the all assigned problems in review.  
 - Studied the concept and usage of collections Framework fundamentals and their importance.  
-- Solved and submit the all assigned problems related to collections framework.  
+- Solved and submit the all assigned problems related to collections framework.
+______________________________________
+
+**Day 17: January 06, 2026**
+- Studied the concept of java stream.  
+- Understand the importance and usage of java stream.
+ ______________________________________
+
+**Day 18: January 07, 2026**
+- Solved the problem related to the concept of java Stream.  
+- Solved and submit the all assigned problems related to streams.  
