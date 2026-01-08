@@ -232,4 +232,7 @@ ______________________________________
 
 **Day 19: January 08, 2026**
 - Studied the documentation of java Exceptions-Handling.  
-- Understand the importance and usage handling the exceptions.
+- Understand the importance and usage of handling the exceptions.
+- Solved and submit the all assigned problems related to exceptions.
+
+[Exceptions](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions)
