@@ -79,42 +79,56 @@ BridgeLabz-Training/
 **Day 01: December 16, 2025**
 - Orientation of the program  
 - Installed and configured the java running environment  
-- Solved 5 leetcode problem  
+- Solved 5 leetcode problem
+
+  [leetcode](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leet-code-codebase)
 ______________________________________
 
 **Day 02: December 17, 2025**
 - Study the Documentation about history and feature of java  
 - solved the basic problem of programming elements  
-- Solved 5 leetcode problem  
+- Solved 5 leetcode problem
+
+  [leetcode](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leet-code-codebase)  
+  [Programming Elements](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements)
 ______________________________________
 
 **Day 03: December 18, 2025**
 - Study the Documentation of variables, data types and operations  
 - practiced of input/output operations.  
-- Solved the all assigned problems of programming elements  
+- Solved the all assigned problems of programming elements
+
+  [Programming Elements](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements) 
 ________________________________________
 
 **Day 04: December 19, 2025**
 - Studied the documentation of control-flow and the using of loops  
-- Solved and submit the all assigned problems of the control-flow assignmnt.  
+- Solved and submit the all assigned problems of the control-flow assignmnt.
+
+  [Control Flow](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/control-flow)  
 ______________________________________
 
 **Day 05: December 20, 2025**
 - Studied the documentation of Arrays and improved the understanding of array creations, accessa and mofification.  
 - Solved and submit the all assigned problems of the Arrays assignmnt.  
-- Also, Soved Scenario based problem related to the concept of arrays  
+- Also, Soved Scenario based problem related to the concept of arrays
+
+  [Arrays](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays)
 ______________________________________
 
 **Day 06: December 22, 2025**
 - Studied the documentation of java String and improved the understanding of string manipulation and error handling.  
-- Solved and submit the all assigned problems of the String assignmnt.  
+- Solved and submit the all assigned problems of the String assignmnt.
+
+  [Strings](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
 ________________________________________
 
 **Day 07: December 23, 2025**
 - Studied the documentation of java Method and improved the understanding of method usage and program structure.  
 - Solved and submit the all assigned problems of the java Method assignmnt.  
-- Also Solved and submit the assigned extra problems of the string and Built-in-functions.  
+- Also Solved and submit the assigned extra problems of the string and Built-in-functions.
 
+  [Extras](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/java-extras)
 ---
 
 ### Object-Oriented Programming (OOPs)
@@ -123,14 +137,19 @@ ________________________________________
 - Studied the documentation of Class and Object.  
 - Learned the implementation of classa and object  
 - Solved and submit the all assigned problems of the clsss and object.  
-- Also, learned the concept of java constructor and solved the assignment.  
+- Also, learned the concept of java constructor and solved the assignment.
+
+[ClassAndObject](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-and-object)  
+[Constructor](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/java-constructor)
 ______________________________________
 
 **Day 09: December 26, 2025**
 - Studied the documentation about the java keywords and improved the knowledge of accessing them.  
 - Solved and submit the all assigned problems of the java Constructor assignmnt. (December 25 (Holiday)).  
 - Studied the documentation about the OOPs- pillars (Inheritance, Abstraction, Encapsulation and Polymorphism) and improved the knowledge of using them in real life questons.  
-- Solved and submit the all assigned problems of the oops-pillars and the object-oriented diagrams.  
+- Solved and submit the all assigned problems of the oops-pillars and the object-oriented diagrams.
+
+[OOPs Pillars](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/oops-pillars)
 ______________________________________
 
 ---
@@ -140,30 +159,41 @@ ______________________________________
 **Day 10: December 29, 2025**
 - Studied the documentation of LinkedList.  
 - Learned the implementation of Limkedlist and the types of linkedlist.  
-- Solved and submit the all assigned problems of the concept related to linkedlist.  
+- Solved and submit the all assigned problems of the concept related to linkedlist.
+
+[LinkedList](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linkedlist)
 ______________________________________
 
 **Day 11: December 30, 2025**
 - Studied the documentation about the stack, queue and Hashing Functions.  
 - Also learned the sorting Algorithms.  
-- Solved and submit the all assigned problems of the stack, queue, hashing function and sorting Algorithms.  
+- Solved and submit the all assigned problems of the stack, queue, hashing function and sorting Algorithms.
+
+[stack-queue-and-hashingfunction](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-queue-and-hashingfunction) 
+[Sorting-Algorithm](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms)
 ______________________________________
 
 **Day 12: December 31, 2025**
 - Studied the documentation of Seaching Algorithm.  
 - Also learned the usage of all linear and Binary Search.  
 - Solved and submit the all assigned problems of Searching Algorithm.  
-- Also solved the scenario based problem related to oops concept.  
+- Also solved the scenario based problem related to oops concept.
+
+[Searching Algorithm](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear-and-binary-search)
 ______________________________________
 
 **Day 13: January 01, 2026**
 - Studied the documentation of Runtime Analysyis ans Big O Notation.  
-- Solved and submit the all assigned problems of the Runtime Analysis Analysis.  
+- Solved and submit the all assigned problems of the Runtime Analysis Analysis.
+
+[Runtime Analysis](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/Algorithm-Runtime-Analysis)
 ______________________________________
 
 **Day 14: January 02, 2026**
 - Learned and Solved the scenario based problems using the concept of core java and oops.  
-- Also, revise the material which is done in previous few days.  
+- Also, revise the material which is done in previous few days.
+
+[Scenario-Based](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based)
 ______________________________________
 
 ---
@@ -176,12 +206,16 @@ ______________________________________
 - Learned about the implementation and usage of generics concept.  
 - Solved and submit the all assigned problems related to Generics concept.
 
+[Generics](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics)
+
 ______________________________________
 
 **Day 16: January 05, 2026**
 - Started with a new branch named (reviews) and solved the all assigned problems in review.  
 - Studied the concept and usage of collections Framework fundamentals and their importance.  
 - Solved and submit the all assigned problems related to collections framework.
+
+[Collections](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections)
 ______________________________________
 
 **Day 17: January 06, 2026**
@@ -191,4 +225,11 @@ ______________________________________
 
 **Day 18: January 07, 2026**
 - Solved the problem related to the concept of java Stream.  
-- Solved and submit the all assigned problems related to streams.  
+- Solved and submit the all assigned problems related to streams.
+
+[Java-Streams](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-streams)
+______________________________________
+
+**Day 19: January 08, 2026**
+- Studied the documentation of java Exceptions-Handling.  
+- Understand the importance and usage handling the exceptions.
