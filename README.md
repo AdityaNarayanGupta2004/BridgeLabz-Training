@@ -236,3 +236,8 @@ ______________________________________
 - Solved and submit the all assigned problems related to exceptions.
 
 [Exceptions](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions)
+______________________________________
+
+**Day 20: January 09, 2026**
+- Revise the concept of Core java practice and oops.  
+- Solved scenario based problems (temperature Analyzer, Student Score Manager) and applied the concept.
