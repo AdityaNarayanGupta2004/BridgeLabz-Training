@@ -60,6 +60,8 @@ BridgeLabz-Training/
 │   │   ├── generics/
 │   │   ├── collections/
 │   │   └── java-streams/
+│   │   ├── exceptions/
+│   │   └── regex-and-junit/
 │   │
 │   ├── scenario-based/
 │   │
@@ -241,3 +243,10 @@ ______________________________________
 **Day 20: January 09, 2026**
 - Revise the concept of Core java practice and oops.  
 - Solved scenario based problems (temperature Analyzer, Student Score Manager) and applied the concept.
+
+______________________________________
+
+**Day 21: January 12, 2026**
+- Studied the documentation of regix.  
+- Understand the importance and usage of regix in java.
+- Solved some of the basic problems of regex.
