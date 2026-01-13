@@ -250,3 +250,12 @@ ______________________________________
 - Studied the documentation of regix.  
 - Understand the importance and usage of regix in java.
 - Solved some of the basic problems of regex.
+
+______________________________________
+
+**Day 22: January 13, 2026**
+- Studied the documentation of junit.  
+- Understand the importance and usage of junit in java.
+- Solved and submit all the assigned problems of regex and junit.
+
+[regex&Junit](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/regex-and-junit)
