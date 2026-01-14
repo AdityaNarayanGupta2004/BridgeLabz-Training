@@ -62,6 +62,7 @@ BridgeLabz-Training/
 │   │   └── java-streams/
 │   │   ├── exceptions/
 │   │   └── regex-and-junit/
+│   │   └── annotations-and-reflection/
 │   │
 │   ├── scenario-based/
 │   │
@@ -259,3 +260,9 @@ ______________________________________
 - Solved and submit all the assigned problems of regex and junit.
 
 [regex&Junit](https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/regex-and-junit)
+______________________________________
+
+**Day 23: January 14, 2026**
+- Studied the documentation of Annotaions in java.  
+- Understand the importance and usage of Annotations in java.
+- Solved some basic problems of annotations.
