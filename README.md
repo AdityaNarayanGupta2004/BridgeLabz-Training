@@ -266,3 +266,15 @@ ______________________________________
 - Studied the documentation of Annotaions in java.  
 - Understand the importance and usage of Annotations in java.
 - Solved some basic problems of annotations.
+ ______________________________________
+
+**Day 24: January 15, 2026**
+- Studied the documentation of Annotaions in java and learn how to use them in program.  
+- Understand the importance and usage of each Annotations in java.
+- Solved the problems of annotations.
+  ______________________________________
+
+**Day 25: January 16, 2026**
+- Studied the documentation of Reflection in java.  
+- Understand the importance and usage of Reflection in java.
+- Solved some basic problems of annotations.
