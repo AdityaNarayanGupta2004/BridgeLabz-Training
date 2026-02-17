@@ -1,4 +1,4 @@
-package employeewage;
+package junit.demo.employeewage;
 
 public interface EmpWageBuilder {
 	void addCompanyEmpWage(String company, int WagePerHour,int WorkingDayperMonth, int maxhourinMonth);

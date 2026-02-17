@@ -1,4 +1,4 @@
-package employeewage;
+package junit.demo.employeewage;
 
 import java.util.ArrayList;
 import java.util.List;

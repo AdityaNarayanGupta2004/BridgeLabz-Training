@@ -1,4 +1,4 @@
-package employeewage;
+package junit.demo.employeewage;
 
 import java.util.*;
 import java.util.stream.IntStream;
