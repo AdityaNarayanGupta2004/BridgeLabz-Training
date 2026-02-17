@@ -119,6 +119,59 @@ public class AddressBookService {
 		addressBooks.get(currentBook).sortbyZip();
 	}
 	
-	
+	// UC-13
+	public void writeToTextFile() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).writeToTextFile();
+	}
+
+	public void readFromTextFile() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).readFromTextFile();
+	}
+
+	// UC-14
+	public void writeToCSV() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).writeToCSV();
+	}
+
+	// UC-14
+	public void readFromCSV() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).readFromCSV();
+	}
+
+	// UC-15
+	public void writeToJSON() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).writeToJSON();
+	}
+
+	// UC-15
+	public void readFromJSON() {
+	    if(currentBook.equals("")) {
+	        System.out.println("Please Select a book First");
+	        return;
+	    }
+	    addressBooks.get(currentBook).readFromJSON();
+	}
+
+
 	
 }

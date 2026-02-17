@@ -25,7 +25,13 @@ public class UserInterface {
 		System.out.println("13. Sort Contact by City");
 		System.out.println("14. Sort contact by State");
 		System.out.println("15. Sort contact by Zip");
-		System.out.println("16. Exit");
+		System.out.println("16. Write Contacts to Text File");
+		System.out.println("17. Read Contacts from Text File");
+		System.out.println("18. Write Contacts to CSV File");
+		System.out.println("19. Read Contacts to CSV File");
+		System.out.println("20. Write Contacts to JSON File");
+		System.out.println("21. Read Contacts to JSON File");
+		System.out.println("22. Exit");
 		System.out.println("Select option: ");
 	}
 	
@@ -111,6 +117,26 @@ public class UserInterface {
 					System.out.println("Contacts Sorted by Zip is Done!");
 					break;
 				case 16:
+					service.writeToTextFile();
+				    break;
+				case 17:
+				    service.readFromTextFile();
+				    break;
+
+				case 18:
+				    service.writeToCSV();
+				    break;
+				case 19:
+				    service.readFromCSV();
+				    break;
+
+				case 20:
+				    service.writeToJSON();
+				    break;
+				case 21:
+				    service.readFromJSON();
+				    break;
+				case 22:
 					System.out.println("Thank You for visiting!");
 					status = false;
 					break;

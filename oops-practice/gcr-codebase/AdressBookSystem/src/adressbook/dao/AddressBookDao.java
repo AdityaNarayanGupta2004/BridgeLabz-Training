@@ -131,4 +131,149 @@ public class AddressBookDao {
 	public void sortbyZip() {
 		contacts.sort(Comparator.comparing(Contacts::getZip, String.CASE_INSENSITIVE_ORDER));
 	}
+	
+	// UC-13 Write to Text File
+	public void writeToTextFile() {
+	    try {
+	        java.io.BufferedWriter writer =
+	                new java.io.BufferedWriter(
+	                        new java.io.FileWriter("addressbook.txt"));
+
+	        for (Contacts c : contacts) {
+	            writer.write(c.getfirstName() + "," +
+	                    c.getlastName() + "," +
+	                    c.getaddress() + "," +
+	                    c.getcity() + "," +
+	                    c.getstate() + "," +
+	                    c.getZip() + "," +
+	                    c.getphoneNumber() + "," +
+	                    c.getemail());
+	            writer.newLine();
+	        }
+	        writer.close();
+	        System.out.println("Data written to Text File");
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	// UC-13 Read from Text File
+	public void readFromTextFile() {
+	    try {
+	        java.io.BufferedReader reader =
+	                new java.io.BufferedReader(
+	                        new java.io.FileReader("addressbook.txt"));
+
+	        String line;
+	        while ((line = reader.readLine()) != null) {
+	            System.out.println(line);
+	        }
+	        reader.close();
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	// UC-14 Write CSV
+	public void writeToCSV() {
+	    try {
+	        com.opencsv.CSVWriter writer =
+	                new com.opencsv.CSVWriter(
+	                        new java.io.FileWriter("addressbook.csv"));
+
+	        for (Contacts c : contacts) {
+	            writer.writeNext(new String[]{
+	                    c.getfirstName(),
+	                    c.getlastName(),
+	                    c.getaddress(),
+	                    c.getcity(),
+	                    c.getstate(),
+	                    c.getZip(),
+	                    c.getphoneNumber(),
+	                    c.getemail()
+	            });
+	        }
+	        writer.close();
+	        System.out.println("CSV File Written Successfully");
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+	
+	// UC-14 Read CSV
+	public void readFromCSV() {
+	    try {
+	        com.opencsv.CSVReader reader =
+	                new com.opencsv.CSVReader(
+	                        new java.io.FileReader("C:\\Users\\Aditya Narayan Gupta\\eclipse-workspace\\AdressBookSystem\\addressbook.csv"));
+
+	        String[] data;
+
+	        while ((data = reader.readNext()) != null) {
+	            Contacts contact = new Contacts(
+	                    data[0],  // firstName
+	                    data[1],  // lastName
+	                    data[2],  // address
+	                    data[3],  // city
+	                    data[6],  // phoneNumber
+	                    data[4],  // state
+	                    data[5],  // zip
+	                    data[7]   // email
+	            );
+
+	            contact.displayAll();
+	            System.out.println("*-*-*-*-*-*-*-*-*");
+	        }
+
+	        reader.close();
+	        System.out.println("CSV File Read Successfully");
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	
+	// UC-15 Write JSON
+	public void writeToJSON() {
+	    try {
+	        com.google.gson.Gson gson =
+	                new com.google.gson.Gson();
+
+	        java.io.FileWriter writer =
+	                new java.io.FileWriter("C:\\Users\\Aditya Narayan Gupta\\eclipse-workspace\\AdressBookSystem\\addressbook.json");
+
+	        gson.toJson(contacts, writer);
+	        writer.close();
+	        System.out.println("JSON File Written Successfully");
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}	
+	
+	// UC-15 Read JSON
+	public void readFromJSON() {
+	    try {
+	        com.google.gson.Gson gson =
+	                new com.google.gson.Gson();
+
+	        java.io.FileReader reader =
+	                new java.io.FileReader("addressbook.json");
+
+	        Contacts[] contactArray =
+	                gson.fromJson(reader, Contacts[].class);
+
+	        for (Contacts c : contactArray) {
+	            c.displayAll();
+	            System.out.println("*-*-*-*-*-*-*-*-*");
+	        }
+
+	        reader.close();
+	        System.out.println("JSON File Read Successfully");
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+
 }
