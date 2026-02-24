@@ -106,6 +106,10 @@ BridgeLabz-Training/
 │   ├── gcr-codebase/
 │   │   ├── MultiThreading/
 |
+├── multi-threading-practice/ (Branch & Folder Name)
+│   │
+│   ├── gcr-codebase/
+│   │   ├── dbms-practice
 ├── reviews/               (Branch & Folder Name)
 ```
 
@@ -431,11 +435,16 @@ ______________________________________
 - And, Also take a overview of DBMS -sql part material.
  ______________________________________
 
-**Day 43: February 12, 2026**
+**Day 46: February 12, 2026**
 - Solved the scenario based problems given by mentors.
 - And, also attend the weekly meeting conducted by capgemini mentors. 
   ______________________________________
 
-**Day 44: February 13, 2026**
+**Day 47: February 14, 2026**
 - Solved some UC of DBMS Assignment and also setup the project requirement.
-- Attended the soft skill session after the lucnch break.
+- Solved some of the Scenario based problems for practice.
+  ______________________________________
+
+**Day 48: February 16, 2026**
+- Understand the concept of multithreading and understand the usage of them in java.
+- Solved the multi-threading assignment.
