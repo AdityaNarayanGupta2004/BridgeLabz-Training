@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+demo,com.Aditya.sonar_qube.adressbook.model,Contacts,11,155,3,7,1,48,4,21,1,19
+demo,com.Aditya.sonar_qube.adressbook.presentation,UserInterface,295,0,19,0,109,0,22,0,5,0
+demo,com.Aditya.sonar_qube,App,7,0,0,0,3,0,2,0,2,0
+demo,com.Aditya.sonar_qube,Calculator,0,15,0,0,0,4,0,4,0,4
+demo,com.Aditya.sonar_qube.adressbook.dao,AddressBookDao,146,153,24,16,39,32,24,10,9,5
+demo,com.Aditya.sonar_qube.adressbook.dao,AddressBookDao.new Comparator() {...},22,0,2,0,4,0,3,0,2,0
+demo,com.Aditya.sonar_qube.adressbook.service,AddressBookService,206,19,14,0,53,5,22,1,15,1

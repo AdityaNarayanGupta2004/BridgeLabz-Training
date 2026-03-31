@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AddressBookService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.Aditya.sonar_qube.adressbook.service</a> &gt; <span class="el_source">AddressBookService.java</span></div><h1>AddressBookService.java</h1><pre class="source lang-java linenums">package com.Aditya.sonar_qube.adressbook.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.Aditya.sonar_qube.adressbook.dao.AddressBookDao;
+import com.Aditya.sonar_qube.adressbook.model.Contacts;
+
+public class AddressBookService {
+<span class="fc" id="L10">	private Map&lt;String, AddressBookDao&gt; addressBooks = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L11">	private String currentBook = &quot;&quot;;</span>
+	
+<span class="fc" id="L13">	public AddressBookService() {</span>
+<span class="fc" id="L14">		addressBooks.put(&quot;defaultBook&quot;, new AddressBookDao());</span>
+<span class="fc" id="L15">	}</span>
+	// UC-6
+	public void createAddressBook(String name) {
+<span class="nc bnc" id="L18" title="All 2 branches missed.">		if(!addressBooks.containsKey(name)) {</span>
+<span class="nc" id="L19">			addressBooks.put(name,  new AddressBookDao());</span>
+<span class="nc" id="L20">			System.out.println(&quot;Address Book Created&quot;);</span>
+		}else {
+<span class="nc" id="L22">			System.out.println(&quot;Already exist &quot;+ name +&quot; Address book&quot;);</span>
+		}
+<span class="nc" id="L24">	}</span>
+	
+	public void selectAddressBook(String name) {
+<span class="nc bnc" id="L27" title="All 2 branches missed.">		if(addressBooks.containsKey(name)) {</span>
+<span class="nc" id="L28">			currentBook = name;</span>
+<span class="nc" id="L29">			System.out.println(&quot;Selected &quot;+ name+&quot;Adress Book&quot;);</span>
+		}else {
+<span class="nc" id="L31">			System.out.println(&quot;Book Not Found&quot;);</span>
+		}
+<span class="nc" id="L33">	}</span>
+	
+	// UC-2,5
+	public void addContact(Contacts contact) {
+<span class="nc bnc" id="L37" title="All 2 branches missed.">		if(currentBook.equals(&quot;&quot;)) {</span>
+<span class="nc" id="L38">			System.out.println(&quot;Please Select a book First&quot;);</span>
+<span class="nc" id="L39">			return;</span>
+		}
+<span class="nc" id="L41">		AddressBookDao dao = addressBooks.get(currentBook);</span>
+<span class="nc" id="L42">		boolean added = dao.addContact(contact);</span>
+		
+<span class="nc bnc" id="L44" title="All 2 branches missed.">		if(added) {</span>
+<span class="nc" id="L45">			System.out.println(&quot;Conntact Added Sucessfully&quot;);</span>
+		}else{
+<span class="nc" id="L47">			System.out.println(&quot;Failed to Add Contact&quot;);</span>
+		}
+<span class="nc" id="L49">	}</span>
+	
+	// UC-3
+	public void editContact(String firstName, String lastName, Contacts updated) {
+<span class="nc bnc" id="L53" title="All 2 branches missed.">		if(currentBook.equals(&quot;&quot;)) {</span>
+<span class="nc" id="L54">			System.out.println(&quot;Please Select a book First&quot;);</span>
+<span class="nc" id="L55">			return;</span>
+		}
+<span class="nc" id="L57">		AddressBookDao dao = addressBooks.get(currentBook);</span>
+		// Removed incorrect addContact call
+<span class="nc" id="L59">		boolean edited = dao.editContact(firstName, lastName, updated);</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">		if(edited) {</span>
+<span class="nc" id="L61">			System.out.println(&quot;Contact Edited Succesfully&quot;);</span>
+		}else {
+<span class="nc" id="L63">			System.out.println(&quot;Contact Not found&quot;);</span>
+		}
+<span class="nc" id="L65">	}</span>
+	
+	
+	// UC-4
+	public void deleteContact(String firstName, String lastName) {
+<span class="nc" id="L70">		boolean delete = addressBooks.get(currentBook).deleteContact(firstName, lastName);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">		if(delete) {</span>
+<span class="nc" id="L72">			System.out.println(&quot;Contact Deleted Succesfully&quot;);</span>
+		}else {
+<span class="nc" id="L74">			System.out.println(&quot;Contact Not Found&quot;);</span>
+		}
+<span class="nc" id="L76">	}</span>
+	public void displayContact() {
+<span class="nc" id="L78">		addressBooks.get(currentBook).displayAll();</span>
+<span class="nc" id="L79">	}</span>
+	
+	// UC-8
+	public void searchPerson(String name) {
+<span class="nc" id="L83">		addressBooks.get(currentBook).searchPerson(name);</span>
+<span class="nc" id="L84">	}</span>
+	 // UC-9
+	public void viewbyState(String state) {
+<span class="nc" id="L87">		addressBooks.get(currentBook).viewbyState(state);</span>
+<span class="nc" id="L88">	}</span>
+	
+	public void viewbyCity(String city) {
+<span class="nc" id="L91">		addressBooks.get(currentBook).viewbyCity(city);</span>
+<span class="nc" id="L92">	}</span>
+	
+	// UC-10
+	public void countbyCity(String city) {
+<span class="nc" id="L96">		addressBooks.get(currentBook).countbyCity(city);</span>
+<span class="nc" id="L97">	}</span>
+	
+	public void countbyState(String state) {
+<span class="nc" id="L100">		addressBooks.get(currentBook).countbyState(state);</span>
+<span class="nc" id="L101">	}</span>
+	
+	// UC-11
+	public void sortbyName() {
+<span class="nc" id="L105">		addressBooks.get(currentBook).sortbyName();</span>
+<span class="nc" id="L106">	}</span>
+		
+	// UC-12
+	public void sortbyCity() {
+<span class="nc" id="L110">		addressBooks.get(currentBook).sortbyCity();</span>
+<span class="nc" id="L111">	}</span>
+	
+	public void sortbyState() {
+<span class="nc" id="L114">		addressBooks.get(currentBook).sortbyState();</span>
+<span class="nc" id="L115">	}</span>
+	
+	public void sortbyZip() {
+<span class="nc" id="L118">		addressBooks.get(currentBook).sortbyZip();</span>
+<span class="nc" id="L119">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

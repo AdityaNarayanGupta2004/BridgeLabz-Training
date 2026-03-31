@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AddressBookDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.Aditya.sonar_qube.adressbook.dao</a> &gt; <span class="el_source">AddressBookDao.java</span></div><h1>AddressBookDao.java</h1><pre class="source lang-java linenums">// package adressbook.dao;
+package com.Aditya.sonar_qube.adressbook.dao;
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import com.Aditya.sonar_qube.adressbook.model.Contacts;
+// import adressbook.model.Contacts;
+
+<span class="fc" id="L13">public class AddressBookDao {</span>
+<span class="fc" id="L14">	private List&lt;Contacts&gt; contacts = new ArrayList&lt;&gt;();</span>
+	
+	// UC-1 Creating a Contact
+	public boolean addContact(Contacts contact) {
+<span class="fc bfc" id="L18" title="All 2 branches covered.">		 for (int i = 0; i &lt; contacts.size(); i++) {</span>
+<span class="fc" id="L19">			 Contacts existing = contacts.get(i);</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">			 if (existing.equals(contact)) {</span>
+<span class="fc" id="L21">				 System.out.println(&quot;Duplicate Contact Found!&quot;);</span>
+<span class="fc" id="L22">				 return false;</span>
+				 }
+			 }
+<span class="fc" id="L25">		 contacts.add(contact);</span>
+<span class="fc" id="L26">		 return true;</span>
+	}
+	
+	public boolean editContact(String firstName, String lastName, Contacts updated) {
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">		for(int i = 0; i &lt; contacts.size(); i++) {</span>
+<span class="fc" id="L31">			Contacts c = contacts.get(i);</span>
+<span class="pc bpc" id="L32" title="2 of 4 branches missed.">			if(c.getfirstName().equalsIgnoreCase(firstName) &amp;&amp; c.getlastName().equalsIgnoreCase(lastName)) {</span>
+<span class="fc" id="L33">				c.setfirstName(updated.getfirstName());</span>
+<span class="fc" id="L34">				c.setlastName(updated.getlastName());</span>
+<span class="fc" id="L35">				c.setaddress(updated.getaddress());</span>
+<span class="fc" id="L36">				c.setcity(updated.getcity());</span>
+<span class="fc" id="L37">				c.setZip(updated.getZip());</span>
+<span class="fc" id="L38">				c.setphoneNumber(updated.getphoneNumber());</span>
+<span class="fc" id="L39">				c.setemail(updated.getemail());</span>
+<span class="fc" id="L40">				c.setstate(updated.getstate());</span>
+<span class="fc" id="L41">				return true;</span>
+			}
+		}
+<span class="nc" id="L44">		return false;</span>
+	}
+	
+	public boolean deleteContact(String firstName, String lastName) {
+<span class="pc bfc" id="L48" title="All 2 branches covered.">		for(int i =0; i &lt; contacts.size(); i++) {</span>
+<span class="fc" id="L49">			Contacts c = contacts.get(i);</span>
+<span class="pc bpc" id="L50" title="2 of 4 branches missed.">			if(c.getfirstName().equalsIgnoreCase(firstName) &amp;&amp; c.getlastName().equalsIgnoreCase(lastName)) {</span>
+<span class="fc" id="L51">				contacts.remove(i);</span>
+<span class="fc" id="L52">				return true;</span>
+			}
+		}
+<span class="fc" id="L55">		return false;</span>
+	}
+	
+	public void displayAll() {
+<span class="nc bnc" id="L59" title="All 2 branches missed.">		for(Contacts c: contacts) {</span>
+<span class="nc" id="L60">			c.displayAll();</span>
+<span class="nc" id="L61">			System.out.println(&quot;*-*-*-*-*-*-*-*-*&quot;);</span>
+<span class="nc" id="L62">		}</span>
+<span class="nc" id="L63">	}</span>
+	public void searchPerson(String name) {
+<span class="fc bfc" id="L65" title="All 2 branches covered.">		for(Contacts c: contacts) {</span>
+<span class="pc bpc" id="L66" title="1 of 4 branches missed.">			if(c.getcity().equalsIgnoreCase(name) || c.getstate().equalsIgnoreCase(name)) {</span>
+<span class="fc" id="L67">				c.displayAll();</span>
+			}
+<span class="fc" id="L69">		}</span>
+<span class="fc" id="L70">	}</span>
+	
+	public void viewbyState(String state) {
+<span class="nc bnc" id="L73" title="All 2 branches missed.">		for(Contacts c: contacts) {</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">			if(c.getstate().equalsIgnoreCase(state)) {</span>
+<span class="nc" id="L75">				c.displayAll();</span>
+			}
+<span class="nc" id="L77">		}</span>
+<span class="nc" id="L78">	}</span>
+	
+	public void viewbyCity(String city) {
+<span class="nc bnc" id="L81" title="All 2 branches missed.">		for(Contacts c: contacts) {</span>
+<span class="nc bnc" id="L82" title="All 2 branches missed.">			if(c.getcity().equalsIgnoreCase(city)) {</span>
+<span class="nc" id="L83">				c.displayAll();</span>
+			}
+<span class="nc" id="L85">		}</span>
+<span class="nc" id="L86">	}</span>
+	
+	public void countbyCity(String city) {
+<span class="nc" id="L89">        int count = 0;</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">        for (Contacts c : contacts) {</span>
+<span class="nc bnc" id="L91" title="All 2 branches missed.">            if (c.getcity().equalsIgnoreCase(city)) {</span>
+<span class="nc" id="L92">                count++;</span>
+            }
+<span class="nc" id="L94">        }</span>
+<span class="nc" id="L95">        System.out.println(&quot;Count: &quot; + count);</span>
+<span class="nc" id="L96">	}</span>
+	
+	public void countbyState(String state) {
+<span class="nc" id="L99">		int count = 0;</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">		for(Contacts c: contacts) {</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">			if(c.getstate().equalsIgnoreCase(state)) {</span>
+<span class="nc" id="L102">				count++;</span>
+			}
+<span class="nc" id="L104">		}</span>
+<span class="nc" id="L105">		System.out.println(&quot;Count: &quot;+ count);</span>
+<span class="nc" id="L106">	}</span>
+	
+	public void sortbyName() {
+<span class="nc" id="L109">		Collections.sort(contacts, new Comparator&lt;Contacts&gt;() {</span>
+		    @Override
+		    public int compare(Contacts c1, Contacts c2) {
+<span class="nc" id="L112">		        int first = c1.getfirstName().compareToIgnoreCase(c2.getfirstName());</span>
+<span class="nc bnc" id="L113" title="All 2 branches missed.">		        if (first != 0) return first;</span>
+<span class="nc" id="L114">		        return c1.getlastName().compareToIgnoreCase(c2.getlastName());</span>
+		    }
+		});
+<span class="nc" id="L117">		System.out.println(&quot;Sorted by Name&quot;);</span>
+<span class="nc" id="L118">	}</span>
+	public void sortbyCity() {
+<span class="nc" id="L120">		contacts.sort(Comparator.comparing(Contacts::getcity, String.CASE_INSENSITIVE_ORDER));</span>
+<span class="nc" id="L121">	}</span>
+	
+	public void sortbyState() {
+<span class="nc" id="L124">		contacts.sort(Comparator.comparing(Contacts::getstate, String.CASE_INSENSITIVE_ORDER));</span>
+<span class="nc" id="L125">	}</span>
+	
+	public void sortbyZip() {
+<span class="nc" id="L128">		contacts.sort(Comparator.comparing(Contacts::getZip, String.CASE_INSENSITIVE_ORDER));</span>
+<span class="nc" id="L129">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
