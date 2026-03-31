@@ -1,0 +1,5 @@
+com\Aditya\sonar_qube\CalculatorTest.class
+com\Aditya\sonar_qube\AppTest.class
+com\Aditya\sonar_qube\adressbook_test\AddressBookDaoTest.class
+com\Aditya\sonar_qube\adressbook_test\AddressBookServiceTest.class
+com\Aditya\sonar_qube\adressbook_test\ContactsTest.class
