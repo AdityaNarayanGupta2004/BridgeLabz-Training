@@ -449,3 +449,17 @@ ______________________________________
 - Understand the concept of multithreading and understand the usage of them in java.
 - Solved the multi-threading assignment.
 
+---
+
+## Repository Info
+**GitHub:** github.com/AdityaNarayanGupta2004
+
+### How to Run
+1.  **Clone:** `git clone https://github.com/AdityaNarayanGupta2004/BridgeLabz-Training.git`
+2.  **Navigate:** Go to the specific directory (e.g., `core-java-practice/gcr-codebase/control-flow`).
+
+## Author
+Aditya Narayan Gupta
+
+---
+
