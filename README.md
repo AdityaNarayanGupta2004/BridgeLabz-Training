@@ -106,7 +106,7 @@ BridgeLabz-Training/
 │   ├── gcr-codebase/
 │   │   ├── MultiThreading/
 |
-├── multi-threading-practice/ (Branch & Folder Name)
+├── DBMS-practice/ (Branch & Folder Name)
 │   │
 │   ├── gcr-codebase/
 │   │   ├── dbms-practice
